@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Collapsible Sidebar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar" aria-label="Primary">
+    <div class="logo">YourLogo</div>
+    <nav class="menu" aria-label="Main">
+      <a href="#" class="item"><span class="icon">🏠</span><span class="label">Home</span></a>
+      <a href="#" class="item"><span class="icon">🔎</span><span class="label">Search</span></a>
+      <a href="#" class="item"><span class="icon">🔔</span><span class="label">Notifications</span></a>
+      <a href="#" class="item"><span class="icon">⚙️</span><span class="label">Settings</span></a>
+      <a href="#" class="item"><span class="icon">❓</span><span class="label">Help</span></a>
+    </nav>
+  </aside>
+  <!-- Backdrop -->
+  <button id="backdrop" class="backdrop" hidden aria-hidden="true"></button>
+  <!-- Page Content -->
+  <main class="content">
+  <header class="topbar">
+  <button id="toggle-sidebar"
+              class="toggle-btn"
+              aria-controls="sidebar"
+              aria-expanded="false"
+              aria-label="Toggle sidebar">☰</button>
+  
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
